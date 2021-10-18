@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastrarComponent implements OnInit {
 
+  nome = '';
+  email = '';
+  senha = '';
+  conf = '';
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  cadastrar() {
+    console.log(this.nome, this.email, this.senha)
   }
 
 }
